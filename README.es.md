@@ -2,8 +2,6 @@
 
 Esta es una pequeña aplicación construida con el framework [SlimPHP](https://www.slimframework.com/) en donde usa [pokeapi.co](https://pokeapi.co/).
 
-Tienes que modificar `APP_ROOT` en el archivo `.env` con el nombre de la carpeta que contiene toda la aplicaión.
-
 ## Tabla de Contenido
 
 - [¿Como empezar?](#como-empezar)
@@ -38,6 +36,8 @@ pokemon_api/
 ```
 
 Importa la base de datos con el servicio que gustes, configura tu archivo `.env` con las credenciales de tu base de datos y ya estarás listo para probar la aplicación.
+
+Tienes que modificar `APP_ROOT` en el archivo `.env` con el nombre de la carpeta que contiene toda la aplicaión.
 
 El archivo `.env` debe de estar en la raiz del proyecto.
 
