@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "65e2b346-094d-43ef-b5c9-6b044a94d6e6",
+		"name": "Api Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Types",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Barer 1234asd234sd"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Barer 1234asd234sd"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/types/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"types",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Barer 1234asd234sd",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"legendary\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Barer 1234asd234sd",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"legend\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/types/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"types",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Barer 1234asd234sd"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/types/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"types",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count Types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer 1234asd234sd",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/count/types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"count",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count Type Beginning With",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer 1234asd234sd",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/pokemon_api/v1/pokemon/count/type/P",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"pokemon_api",
+								"v1",
+								"pokemon",
+								"count",
+								"type",
+								"P"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Barer 1234asd234sd"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/pokemon_api/v1/pokemon/page/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pokemon_api",
+						"v1",
+						"pokemon",
+						"page",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Barer 1234asd234sd"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"alure\",\r\n    \"base_experience\": 54,\r\n    \"height\": 45,\r\n    \"is_default\": 1,\r\n    \"order\": true,\r\n    \"weight\": 56,\r\n    \"sprite_front_default\": \"sprite.png\",\r\n    \"sprite_front_shiny\": \"spriteFront.png\",\r\n    \"types\": [1,2]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/pokemon_api/v1/pokemon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pokemon_api",
+						"v1",
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Barer 1234asd234sd"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"alureDark\",\r\n    \"base_experience\": 54,\r\n    \"height\": 45,\r\n    \"is_default\": 1,\r\n    \"order\": true,\r\n    \"weight\": 70,\r\n    \"sprite_front_default\": \"sprite.png\",\r\n    \"sprite_front_shiny\": \"spriteFront.png\",\r\n    \"types\": [8, 5]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/pokemon_api/v1/pokemon/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pokemon_api",
+						"v1",
+						"pokemon",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Barer 1234asd234sd"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/pokemon_api/v1/pokemon/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pokemon_api",
+						"v1",
+						"pokemon",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Barer 1234asd234sd",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"Other\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/pokemon_api/v1/pokemon/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pokemon_api",
+						"v1",
+						"pokemon",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

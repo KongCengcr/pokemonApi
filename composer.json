@@ -1,0 +1,19 @@
+{
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6",
+        "vlucas/phpdotenv": "^5.5",
+        "robmorgan/phinx": "^0.13.3"
+    },
+    "scripts": {
+        "migrate:create": "vendor/bin/phinx --configuration=\"phinx.php\" create ",
+        "migrate": "vendor/bin/phinx --configuration=\"phinx.php\" migrate ",
+        "rollback": "vendor/bin/phinx --configuration=\"phinx.php\" rollback ",
+        "rollback:all": "vendor/bin/phinx --configuration=\"phinx.php\" rollback -e development -t 0 -f"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    }
+}
