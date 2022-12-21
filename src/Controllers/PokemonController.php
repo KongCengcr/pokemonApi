@@ -52,6 +52,8 @@ class PokemonController
             $pokemonModel = new Pokemon();
             $pokemon = $pokemonModel->find($id);
 
+            if (!$pokemon) return $responseHandler->error('Pokemon not exist!', 404);
+
             $pokemonResource = new PokemonResource($pokemon);
             $parse = $pokemonResource->parseData();
 

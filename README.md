@@ -2,6 +2,8 @@
 
 This is a small application built with the [SlimPHP](https://www.slimframework.com/) framework using [pokeapi.co](https://pokeapi.co/).
 
+You have to modify `APP_ROOT` in the `.env` file with the name of the folder containing the whole application.
+
 ## Table of Contents
 
 - [Get Started](#get-started)

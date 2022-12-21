@@ -10,7 +10,7 @@ $dotenv = Dotenv\Dotenv::createImmutable('../');
 $dotenv->load();
 
 $app = AppFactory::create();
-$app->setBasePath('/pokemon_api');
+$app->setBasePath($_ENV['APP_ROOT']);
 
 $app->addRoutingMiddleware();
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
